@@ -1,0 +1,20 @@
+{
+  "name": "blogsapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "method-override": "^2.3.10",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.13"
+  },
+  "engines" : { "node" : "4.7.3"}
+}

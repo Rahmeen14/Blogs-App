@@ -1,0 +1,26 @@
+<% include partials/header %>
+        <div class= "ui main container segment">
+        <div class ="ui huge header">Edit Blog</div>
+        <form  class= "ui fluid form" action="/blogs/<%=blog._id %>?_method=PUT" method="POST">
+            <div class="field">
+                <label>Title</label>
+            <input type="text" value="<%= blog.title %>" name="blog[title]">
+            </div>
+            <div class="field">
+                 <label>Blog Post</label>
+                <textarea name="blog[content]" ><%- blog.content %></textarea>
+            </div>
+            <div class="field">
+                 <label>Image url</label>
+                <input type="text" value="<%= blog.image%>" name="blog[image]">
+            </div>
+            <div class="field">
+                 <label>Author</label>
+                <input type="text" value="<%= blog.author%>" name="blog[author]">
+            </div>
+                 <div class="field"> <input class="button ui primary" type="submit">
+            </div>
+           
+        </form>
+    </div>
+<% include partials/footer %>
